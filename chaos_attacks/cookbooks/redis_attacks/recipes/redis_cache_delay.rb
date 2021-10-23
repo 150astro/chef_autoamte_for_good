@@ -3,8 +3,9 @@
 # Recipe:: default
 #
 # Copyright:: 2021, The Authors, All Rights Reserved.
-# Note: This reciple is created only as a prototype. The docker-id, sleep time has to be configured dynamically
+
+redis_docker_id = node["redis_docker_id"]
 
 execute "Simulate latency in redis cache layer using sleep calls" do
- command "docker exec -it 9931cd2be5a7 redis-cli DEBUG SLEEP 30"
+ command "docker exec -i #{redis_docker_id} redis-cli DEBUG SLEEP 30"
 end
