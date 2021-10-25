@@ -1,6 +1,6 @@
 # Automating for Failures - Chaos Engineering with Chef
 
-## About:
+## About this Project:
 Failures happen in large distributed systems. We have seen recent worldwide outage of Facebook, Instagram, and WhatsApp. Fastly's outage happened mid this year and Google's outage at end of 2020. Failures happen!
 
 But, can we identify these failures proactively? Chaos Engineering has been practiced widely to solve this problem. With Chef, we are automating the Chaos Engineering experiments that create turbulent attacks in your system to:
@@ -18,7 +18,7 @@ Our project - Automating for Failures, uses Chef Infra to automate the attacks o
 - Blocking networks
 - Simulating a failover in the database
 - Using all of the server's CPU cores
-- 
+
 ## How we built it:
 Our Chaos Attacks Pipeline involves following components:
 
