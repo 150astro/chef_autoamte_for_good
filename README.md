@@ -5,25 +5,26 @@ Failures happen in large distributed systems. We have seen recent worldwide outa
 
 But, can we identify these failures proactively? Chaos Engineering has been practiced widely to solve this problem. With Chef, we are automating the Chaos Engineering experiments that create turbulent attacks in your system to:
 
-Build confidence in your systems
-Uncover point of failures
-Detect failures proactively
+- Build confidence in your systems
+- Uncover point of failures
+- Detect failures proactively
 
 ## What it does:
 Our project - Automating for Failures, uses Chef Infra to automate the attacks on your system hosted on AWS, Google Cloud, or in your own infrastructure. These attacks generate several turbulent conditions in your system like:
 
-Rebooting servers
-Stoping services
-Killing running processes
-Blocking networks
-Simulating a failover in the database
-Using all of the server's CPU cores
-How we built it:
-Chaos Attacks Pipeline:
+- Rebooting servers
+- Stoping services
+- Killing running processes
+- Blocking networks
+- Simulating a failover in the database
+- Using all of the server's CPU cores
+- 
+## How we built it:
+Our Chaos Attacks Pipeline involves following components:
 
-Chef Workstation: Develop and test attacks
-Managed Chef server: Manage cookbooks, roles, policies, and nodes
-Chef nodes: Run chef-client to trigger attacks
+- Chef Workstation: Develop and test attacks
+- Managed Chef server: Manage cookbooks, roles, policies, and nodes
+- Chef nodes: Run chef-client to trigger attacks
 
 ## Chef + Chaos Engineering:
 
